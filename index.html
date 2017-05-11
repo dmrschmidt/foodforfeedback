@@ -16,9 +16,10 @@
   </div>
 
   <script src="./src/FeedbackFeeder.js" type="text/javascript"></script>
+  <script src="./src/prompts.js" type="text/javascript"></script>
   <script type="text/javascript">
     (function() {
-      var feedbackFeeder = new FeedbackFeeder()
+      var feedbackFeeder = new FeedbackFeeder(prompts, new Randomizer())
       var feedbackPrompt = feedbackFeeder.feedbackPrompt()
       document.getElementById('prompt').innerText = feedbackPrompt
     })()
