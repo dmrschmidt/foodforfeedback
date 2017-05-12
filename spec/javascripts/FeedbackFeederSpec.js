@@ -8,27 +8,28 @@ StubRandomizer.prototype.pickWithinRange = function(upperBound) {
 
 describe("FeedbackFeeder", function() {
   var prompts = ['foo', 'bar']
-  var randomizer1, randomizer2
-
-  beforeEach(function() {
-    randomizer1 = new StubRandomizer(0)
-    randomizer2 = new StubRandomizer(1)
-    spyOn(randomizer1, 'pickWithinRange').and.callThrough()
-    spyOn(randomizer2, 'pickWithinRange').and.callThrough()
-  })
 
   it("returns a feedback prompt based on randomizer", function() {
-    var feedbackFeeder1 = new FeedbackFeeder(prompts, randomizer1)
-    var feedbackFeeder2 = new FeedbackFeeder(prompts, randomizer2)
+    const alwaysFirstRandomizer = new StubRandomizer(0)
+    const feedbackFeeder = new FeedbackFeeder(prompts, alwaysFirstRandomizer)
 
-    expect(feedbackFeeder1.feedbackPrompt()).toEqual('foo')
-    expect(feedbackFeeder2.feedbackPrompt()).toEqual('bar')
+    expect(feedbackFeeder.feedbackPrompt()).toEqual('foo')
+  })
+
+  it("returns a different feedback prompt based on a different randomizer", function() {
+    const alwaysSecondRandomizer = new StubRandomizer(1)
+    const feedbackFeeder = new FeedbackFeeder(prompts, alwaysSecondRandomizer)
+
+    expect(feedbackFeeder.feedbackPrompt()).toEqual('bar')
   })
 
   it('restricts randomization to available prompts', function() {
-    var feedbackFeeder = new FeedbackFeeder(prompts, randomizer1)
+    const randomizer = new StubRandomizer(0)
+    const feedbackFeeder = new FeedbackFeeder(prompts, randomizer)
+    spyOn(randomizer, 'pickWithinRange').and.callThrough()
+
     feedbackFeeder.feedbackPrompt()
 
-    expect(randomizer1.pickWithinRange).toHaveBeenCalledWith(1);
+    expect(randomizer.pickWithinRange).toHaveBeenCalledWith(1)
   })
 })
