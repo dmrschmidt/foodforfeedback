@@ -39,7 +39,7 @@ var prompts = [
     "We are doing well maintaining symbols in Sketch.",
     "Design review went really well this week.",
     "Cross discipline pairing went really well.",
-    "We haven't really paired accross disciplines this week."
+    "We haven't really paired across disciplines this week.",
     "Thanks for sharing that interesting article.",
     "Why didn't we pair on that thing the other day?",
     "I am comfortable explaining all of our technology to somebody else."
