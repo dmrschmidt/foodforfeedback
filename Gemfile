@@ -1,3 +1,7 @@
 source "https://rubygems.org"
 
-gem 'jasmine'
+group :testing do
+  gem 'jasmine'
+  gem 'poltergeist'
+  gem 'rspec'
+end
