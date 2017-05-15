@@ -5,14 +5,21 @@ body {
   background: -o-linear-gradient(to right, #64bbaa, #00A698);
   background: linear-gradient(to right, #64bbaa, #00A698);
 
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
 }
 
 h1 {
   color: white;
-  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 39px;
+}
+
+h2 {
+  color: #22EEEE;
+  text-shadow: 0px -1px 0px #4D4C10;
+  opacity: 0.4;
+  font-size: 1.1em;
 }
 
 #container {
