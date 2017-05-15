@@ -6,7 +6,7 @@ body {
   background: linear-gradient(to right, #64bbaa, #00A698);
 
   font-family: 'Open Sans', sans-serif;
-  text-align: center;
+  color: #ffffff;
 }
 
 h1 {
@@ -22,7 +22,13 @@ h2 {
   font-size: 1.1em;
 }
 
+#explanation {
+  max-width: 768px;
+  padding: 1em;
+}
+
 #container {
+  text-align: center;
   position: absolute;
   top: 50%;
   margin-top: -200px;
@@ -39,7 +45,7 @@ h2 {
   height: auto;
 }
 
-#get_in_touch a {
+a {
   text-decoration: none;
   color: aliceblue;
 }
