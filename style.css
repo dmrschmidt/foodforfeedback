@@ -37,3 +37,8 @@ h2 {
   margin-right: auto;
   height: auto;
 }
+
+#get_in_touch a {
+  text-decoration: none;
+  color: aliceblue;
+}
