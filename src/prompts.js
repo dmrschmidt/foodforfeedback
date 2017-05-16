@@ -42,5 +42,19 @@ var prompts = [
     "We haven't really paired across disciplines this week.",
     "Thanks for sharing that interesting article.",
     "Why didn't we pair on that thing the other day?",
-    "I am comfortable explaining all of our technology to somebody else."
+    "I am comfortable explaining all of our technology to somebody else.",
+    "I can explain to a passer-by what we’re working on now and what’s next for the product.",
+    "We paired for a significant part of the day.",
+    "We shared the “driver” role while pairing today.",
+    "The backlog is healthy.",
+    "We were on top of story acceptance today.",
+    "We should make sure we don’t run out of stories this week.",
+    "We focused on the most important thing today.",
+    "I felt productive today!",
+    "I liked how you facilitated… (e.g. IPM, retro)",
+    "It felt like we’re on the same wave-length today.",
+    "If we could improve one thing about how we worked today, it would be ...",
+    "We should definitely keep doing ...",
+    "We should really think about kicking ...",
+    "We accepted some stories today."
 ]
