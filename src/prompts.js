@@ -10,7 +10,7 @@ var prompts = [
     "Today's flow was quite bad compared to other days.",
     "Reaching a consensus during today's discussion wasn't easy.",
     "We were really discussing quite a lot today.",
-    "I love how agreed on every topic very quickly today.",
+    "I love how we agreed on every topic very quickly today.",
     "We were boy-scouting the code really well today.",
     "We cut quite a few corners here and there.",
     "We went out of scope for the story at least one time.",
