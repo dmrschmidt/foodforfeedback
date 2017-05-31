@@ -15,13 +15,27 @@ discuss.
 It's recommended to set a collective reminder in your team's calendar for every
 day. You can get recommendations by simply visiting https://highfive.cfapps.io
 
-# Installation
+# Pre-Requisites / Installation
+
+While the tool / website itself is a simple static HTML website with JS, during
+development a few dependencies are required.
 
 ```sh
-$ brew install phantomjs
+$ brew install phantomjs  # requires homebrew - https://brew.sh/
+$ bundle install          # requires ruby
 ```
 
-# Maintenance tasks
+# Deployment
+
+It's easy to deploy your own version to Cloud Foundry. Simply
+[install the CF cli](https://docs.cloudfoundry.org/cf-cli/install-go-cli.html),
+login to your account, adjust the route in the `manifest.yml` and run
+`rake cf:deploy`.
+
+To get access to the version hosted on https://highfive.cfapps.io get in touch
+with [@mamachanko](https://github.com/mamachanko) or [@dmrschmidt](https://github.com/dmrschmidt).
+
+# Development tasks
 
 ```sh
 rake cf:deploy                          # deploys to Cloud Foundry
