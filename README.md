@@ -25,6 +25,7 @@ $ brew install phantomjs
 
 ```sh
 rake cf:deploy                          # deploys to Cloud Foundry
+rake dev:server                         # runs a local dev server
 rake git:check_for_uncommitted_changes  # Checks for uncommitted changes and aborts if any are found
 rake git:push                           # Pushes the current branch to origin
 rake jasmine                            # Start server to host jasmine specs
