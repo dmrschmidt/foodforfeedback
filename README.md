@@ -21,9 +21,9 @@ While the tool / website itself is a simple static HTML website with JS, during
 development a few dependencies are required.
 
 ```sh
-$ brew tap homebrew/cask  # requires homebrew - https://brew.sh/
+$ brew tap homebrew/cask       # requires homebrew - https://brew.sh/
 $ brew cask install phantomjs
-$ bundle install          # requires ruby
+$ bundle install               # requires ruby
 ```
 
 # Deployment
