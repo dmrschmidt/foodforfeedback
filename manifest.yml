@@ -8,6 +8,4 @@ applications:
   routes:
   - route: highfive.cfapps.io
   - route: high-five.cfapps.io
-  services:
-  - autoscale-Beach-Berlin
   stack: cflinuxfs2
